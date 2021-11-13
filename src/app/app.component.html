@@ -1,0 +1,33 @@
+
+
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+
+<P>
+<label for= "firstname">First Name</label>
+<input type="text" id="firstname" name="firstname" placeholder="first name here" FormControlName="firstname">
+</P>
+
+<p>
+<label for="lastname">Last Name</label>
+<input type="text" id="lastname" name="lastname" placeholder="last name here" FormControlName="lastname">
+</p>
+
+<p>
+  <label for="email">Email</label>
+  <input type="text" id ="email" name="email" placeholder="your email" FormControlName="email">
+</p>
+
+<p>
+<label for="gender">gender</label>
+<input type="checkbox" label="male"  id="gender" name="gender" FormControlName="gender">male
+<input type="checkbox" label="female" id="gender"> female
+</p>
+
+<p>
+<label for="isMarried">Married</label>
+<input type="checkbox" id="isMarried" name="isMarried" FormControlName="Married">
+</p>
+
+<p>
+  <button type="submit">Submit</button>
+</p>
